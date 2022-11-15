@@ -1,0 +1,16 @@
+{
+  "name": "cypress-v2",
+  "version": "2.0.0",
+  "description": "Cypress cool stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc --noEmit --pretty --allowJs cypress/**/*.js"
+  },
+  "author": "dannyk",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.0.1",
+    "typescript": "^4.8.4"
+  }
+}
