@@ -4,8 +4,8 @@ describe('add to cart', () => {
     beforeEach(() => {
         cy.visit(Cypress.config('baseUrl'))
         cy.clearCookies();
-        //cy.acceptCookies();
-        cy.selectDefaultLanguage();
+        cy.acceptCookies();
+        //cy.selectDefaultLanguage();
     })
 
     it('displays two todo items by default', () => {
