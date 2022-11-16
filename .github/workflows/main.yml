@@ -12,7 +12,7 @@ jobs:
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run --spec ./cypress/e2e/add-to-cart.cy.ts
+      - name: Cypress run --spec ./cypress/e2e/smoke | ls -la | pwd
         uses: cypress-io/github-action@v4
         with:
           browser: chrome
