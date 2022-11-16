@@ -15,5 +15,5 @@ jobs:
       - name: pwd | Cypress run
         uses: cypress-io/github-action@v4
         with:
-        spec: cypress/e2e/smoke
+          spec: cypress/e2e/smoke/*
           browser: chrome
