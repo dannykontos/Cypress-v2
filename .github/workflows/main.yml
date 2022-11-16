@@ -12,7 +12,8 @@ jobs:
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: pwd | Cypress run --spec cypress/e2e/smoke
+      - name: pwd | Cypress run
         uses: cypress-io/github-action@v4
         with:
+        spec: cypress/e2e/smoke
           browser: chrome
