@@ -2,7 +2,7 @@
 
 describe('add to cart', () => {
     beforeEach(() => {
-        cy.visit('/')
+        cy.visit(Cypress.env('baseUrl'))
         cy.acceptCookies();
         cy.selectDefaultLanguage();
     })
