@@ -2,7 +2,7 @@
 
 describe('add to cart', () => {
     beforeEach(() => {
-        cy.visit('https://burton.com')
+        cy.visit('/')
         cy.acceptCookies();
         cy.selectDefaultLanguage();
     })
