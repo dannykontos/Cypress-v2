@@ -28,8 +28,8 @@ Cypress.Commands.add('assertNumberOfItemsOnPage', (numberOfItems) => {
     cy.get('.product-page .product-image')
         .should('have.length', numberOfItems)
 })
-Cypress.Commands.add('clickOnSpecificProduct', (numberOfItems) => {
-    cy.get('.product-page h2.product-name').eq(4).click()
+Cypress.Commands.add('clickOnSpecificProduct', (intemNumber) => {
+    cy.get('.product-page h2.product-name').eq(intemNumber).click()
 })
 Cypress.Commands.add('selectAvailableSize', () => {
     cy.get('.options-scroll-pane .swatch-link').eq(1).click()
@@ -43,7 +43,7 @@ Cypress.Commands.add('continueShopping', () => {
 Cypress.Commands.add('cartEquals', (numberOfItems) => {
     cy.get('.secondary-navigation .js-amount').should('have.text', `${numberOfItems}`);
 })
-
+//
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
