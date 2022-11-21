@@ -9,10 +9,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: pwd | Cypress run
+      - name: Install TypeScript
+        working-directory: ./e2e-tests
+        run: |
+          pwd
+          cat package.json
+          npm install typescript --save-dev
+          cat package.json
+      - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
           spec: cypress/e2e/smoke/*
