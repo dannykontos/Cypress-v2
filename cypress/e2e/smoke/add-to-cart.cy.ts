@@ -12,7 +12,7 @@ describe('add to cart', () => {
         const newItem = 'Snowboards';
         cy.searchCustomProduct(newItem);
         cy.assertNumberOfItemsOnPage(18);
-        cy.clickOnSpecificProduct();
+        cy.clickOnSpecificProduct(2);
         cy.selectAvailableSize();
         cy.clickAddToCart();
         cy.continueShopping();
