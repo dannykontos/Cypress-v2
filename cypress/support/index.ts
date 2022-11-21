@@ -15,8 +15,8 @@ declare global {
       acceptCookies(): Chainable<Element>
       selectDefaultLanguage(): Chainable<Element>
       searchCustomProduct(keyword: String): Chainable<Element>
-      assertNumberOfItemsOnPage(itemNuber: Number): Chainable<Element>
-      clickOnSpecificProduct(): Chainable<Element>
+      assertNumberOfItemsOnPage(itemsNumber: Number): Chainable<Element>
+      clickOnSpecificProduct(itemsNumber: Number): Chainable<Element>
       clickAddToCart(): Chainable<Element>
       selectAvailableSize(): Chainable<Element>
       continueShopping(): Chainable<Element>
