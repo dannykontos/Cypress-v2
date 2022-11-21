@@ -28,8 +28,8 @@ Cypress.Commands.add('assertNumberOfItemsOnPage', (numberOfItems) => {
     cy.get('.product-page .product-image')
         .should('have.length', numberOfItems)
 })
-Cypress.Commands.add('clickOnSpecificProduct', (intemNumber) => {
-    cy.get('.product-page h2.product-name').eq(intemNumber).click()
+Cypress.Commands.add('clickOnSpecificProduct', (itemNumber) => {
+    cy.get('.product-page h2.product-name').eq(itemNumber).click()
 })
 Cypress.Commands.add('selectAvailableSize', () => {
     cy.get('.options-scroll-pane .swatch-link').eq(1).click()
