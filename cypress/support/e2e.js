@@ -15,6 +15,18 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
+import './ui/agenda/homepage'
+import './ux/agenda/homepage'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+/*before(() => {
+    cy.intercept("*", (req) => {
+      req.headers["Accept-Encoding"] = "gzip, deflate"
+    }),
+      Cypress.on("uncaught:exception", (err, runnable) => {
+        // returning false here prevents Cypress from
+        // failing the test
+        return false
+      })
+  })*/
+  

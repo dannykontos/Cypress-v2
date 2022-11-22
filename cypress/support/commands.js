@@ -10,7 +10,6 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => { cy.visit('https://burton.com') })
 Cypress.Commands.add('acceptCookies', () => {
     cy.get('button[id*="onetrust-accept-btn-handler"').should('have.length', 1);
     cy.get('button[id*="onetrust-accept-btn-handler"').click();
