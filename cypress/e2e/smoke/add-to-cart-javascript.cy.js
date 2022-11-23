@@ -4,8 +4,8 @@ describe('add to cart', () => {
     beforeEach(() => {
         cy.visit(Cypress.config('baseUrl'))
         cy.clearCookies();
-        //cy.acceptCookies();
-        //cy.selectDefaultLanguage();
+        //cy.acceptCookies();           // features are not available in the pipeline
+        //cy.selectDefaultLanguage();   // features are not available in the pipeline
     })
 
     it('displays two todo items by default', () => {
@@ -20,8 +20,10 @@ describe('add to cart', () => {
     })
 
     it.skip('can add new todo items', () => {
+        //TODO
     })
 
     it.skip('can check off an item as completed', () => {
+        //TODO
     })
 })

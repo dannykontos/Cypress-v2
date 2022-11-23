@@ -26,9 +26,8 @@ Cypress.Commands.add('acceptCookiesTs', () => {
     cy.acceptCookiesBtn().click();
 })
 Cypress.Commands.add('selectDefaultLanguageTs', () => {
-    cy.stayOnThisSiteBtn().first().click({force: true});
+    cy.stayOnThisSiteBtn().first().click();
 })
-
 Cypress.Commands.add('assertNumberOfItemsOnPageTs', (numberOfItems) => {
     cy.searchResultsArray().should('have.length', numberOfItems)
 })
